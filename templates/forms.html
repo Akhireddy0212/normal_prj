@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block title%}
+employe form
+{%endblock%}
+{%block body%}
+   <h1>officer</h1>
+    {%load static%}
+<div class="lo">
+<form method="post">
+
+    {%csrf_token%}
+    {{forms.as_p}}
+    <input type="submit" value="click">
+
+</form>
+    </div>
+{%endblock%}
